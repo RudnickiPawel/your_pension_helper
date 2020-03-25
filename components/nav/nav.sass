@@ -1,25 +1,41 @@
 .nav
   display: flex
   width: 100%
-  
+  @media screen and ( max-width: 1270px )
+    flex-direction: column
+    
   &__image
     align-self: center
+    @media screen and ( max-width: 1270px )
+      margin: 15px 0 !important
     &1
     &2
       margin: 0 118px 0 28px
     &3
       margin: 0 13px 0 35px
+      @media screen and ( max-width: 1270px )
+        margin: 0 13px 0 0 !important
   &__categories
     margin-top: 39px
     margin-bottom: 38px
     width: 450px
     display: flex
     justify-content: space-between
+    @media screen and ( max-width: 1270px )
+      width: 100%
+      text-align: center
+      flex-direction: column
+      margin: 20px 0
 
   &__category
     font-size: 20px
     color: #0a2f73
     text-decoration: none
+
+  &__phone
+    text-decoration: none
+    display: flex
+    
   &__phone-text
     &1, &2
       margin-left: 1px
