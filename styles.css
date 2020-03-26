@@ -145,6 +145,29 @@
   color: #0a2f73;
 }
 
+.image__width100 {
+  width: 100%;
+}
+
+.image__height--sea-image {
+  height: 800px;
+}
+
+.image__cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image__contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.image__position--sea-image {
+  -o-object-position: 0%;
+     object-position: 0%;
+}
+
 body, html {
   position: relative;
   max-width: 1920px;
