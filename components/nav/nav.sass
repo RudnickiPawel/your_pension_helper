@@ -1,8 +1,14 @@
 .nav
   display: flex
+  justify-content: center
+  align-items: center
   width: 100%
-  @media screen and ( max-width: 1270px )
+  @media (min-width: 768px) and ( max-width: 1270px )
+    justify-content: center
+    flex-wrap: wrap
+  @media screen and ( max-width: 767px )
     flex-direction: column
+    
     
   &__image
     align-self: center
@@ -11,23 +17,32 @@
     &1
     &2
       margin: 0 118px 0 28px
+      @media (min-width: 768px) and ( max-width: 1270px )
+        margin: 0 30px !important
+
     &3
       margin: 0 13px 0 35px
       @media screen and ( max-width: 1270px )
         margin: 0 13px 0 0 !important
   &__categories
-    margin-top: 39px
-    margin-bottom: 38px
     width: 450px
     display: flex
+    margin: 33px 0
     justify-content: space-between
-    @media screen and ( max-width: 1270px )
+    align-content: center
+    @media (min-width: 768px) and ( max-width: 1270px )
+      order: 2
+      justify-content: space-around
+      flex-basis: 100%
+    @media screen and ( max-width: 767px )
+      order: 2
       width: 100%
       text-align: center
       flex-direction: column
       margin: 20px 0
 
   &__category
+    margin: 15px 0
     font-size: 20px
     color: #0a2f73
     text-decoration: none
@@ -35,6 +50,8 @@
   &__phone
     text-decoration: none
     display: flex
+    @media screen and ( max-width: 1270px )
+      order: 1
     
   &__phone-text
     &1, &2
