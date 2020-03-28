@@ -16,11 +16,34 @@
     background-size: cover
     background-position: 0% 100%
     color: #ffffff
+    @media screen and ( max-width: 767px )
+      height: auto
     &__wrapper
       display: flex
+      @media (min-width: 768px) and ( max-width: 1270px )
+        width: 100%
+      @media screen and ( max-width: 767px )
+        flex-direction: column
     &__container
       margin-right: 231px
       margin-top: 254px
+      @media (min-width: 768px) and ( max-width: 1270px )
+        margin-left: 3%
+        margin-right: auto
+      @media screen and ( max-width: 767px )
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-right: 0
+        text-align: center
+        margin-top: 40px
+      @media ( min-width: 768px ) and ( max-width: 1050px )
+        text-align: center
+        margin-right: 3%
+        .section--home-sea__title
+          font-size: 32px
+        .section--home-sea__text
+          font-size: 25px
     &__title
       font-size: 44px
       max-width: 591px
@@ -30,12 +53,21 @@
       max-width: 576px
       margin-top: 42px
     &__form
+      @media (min-width: 768px) and ( max-width: 1270px )
+        margin-right: 3%
+      @media screen and ( max-width: 767px )
+        width: 100vw
+        display: flex
+        flex-direction: column
+        align-items: center
       &__upper
         margin-top: 131px
         width: 100vw
         max-width: 379px
         text-align: center
         background-image: linear-gradient(to left, #006ace, #0052a0)
+        @media screen and ( max-width: 767px )
+          margin-top: 30px
         &__text1
           font-family: 'Merriweather', sans-serif
           font-size: 24px
@@ -53,6 +85,7 @@
       &__lower
         padding: 0 20px 20px 20px
         background-color: #006ace
+        max-width: 339px
         &__text-imput
           width: 100vw
           max-width: 335px
