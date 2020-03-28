@@ -31,6 +31,12 @@
   color: #ffffff;
 }
 
+.section--home-sea__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .section--home-sea__container {
   margin-right: 231px;
   margin-top: 254px;
@@ -46,4 +52,94 @@
   line-height: 1.33;
   max-width: 576px;
   margin-top: 42px;
+}
+
+.section--home-sea__form__upper {
+  margin-top: 131px;
+  width: 100vw;
+  max-width: 379px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, right top, left top, from(#006ace), to(#0052a0));
+  background-image: linear-gradient(to left, #006ace, #0052a0);
+}
+
+.section--home-sea__form__upper__text1 {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 24px;
+  padding-top: 19px;
+}
+
+.section--home-sea__form__upper__text2 {
+  font-size: 16px;
+  padding-bottom: 14px;
+}
+
+.section--home-sea__form__upper__text2__span1 {
+  font-size: 24px;
+}
+
+.section--home-sea__form__divider {
+  width: 100vw;
+  max-width: 379px;
+  height: 6px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#006ace), to(#0052a0));
+  background-image: linear-gradient(to right, #006ace, #0052a0);
+}
+
+.section--home-sea__form__lower {
+  padding: 0 20px 20px 20px;
+  background-color: #006ace;
+}
+
+.section--home-sea__form__lower__text-imput {
+  width: 100vw;
+  max-width: 335px;
+  font-size: 28px;
+  height: 33px;
+}
+
+.section--home-sea__form__lower__label {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.section--home-sea__form__lower .section--home-sea__form__submit-btn {
+  border: none;
+  background-color: #ffba00;
+  font-weight: 700;
+  font-size: 22px;
+  color: #0a2f73;
+  padding: 20px 0 19px;
+  width: 100vw;
+  max-width: 338px;
+  cursor: pointer;
+}
+
+.section--home-sea__form__lower .section--home-sea__form__submit-btn:hover {
+  color: #ffffff;
+}
+
+.section--home-sea__form__lower__note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  padding: 11px 0 8px;
+}
+
+.section--home-sea__form__lower__icon {
+  padding-right: 9px;
+}
+
+.section--home-sea__form__lower__privacy-link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid #ffffff;
+}
+
+.section--home-sea__form__lower__privacy-link:hover {
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
