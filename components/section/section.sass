@@ -36,7 +36,11 @@
         align-items: center
         margin-right: 0
         text-align: center
-        margin-top: 40px
+        margin: 40px 3% 0
+        .section--home-sea__title
+          font-size: 32px
+        .section--home-sea__text
+          font-size: 25px
       @media ( min-width: 768px ) and ( max-width: 1050px )
         text-align: center
         margin-right: 3%
@@ -68,6 +72,11 @@
         background-image: linear-gradient(to left, #006ace, #0052a0)
         @media screen and ( max-width: 767px )
           margin-top: 30px
+          .section--home-sea__form__upper__text1, .section--home-sea__form__upper__text2__span1
+            font-size: 20px
+          .section--home-sea__form__upper__text2
+            font-size: 12px
+        
         &__text1
           font-family: 'Merriweather', sans-serif
           font-size: 24px
@@ -86,11 +95,16 @@
         padding: 0 20px 20px 20px
         background-color: #006ace
         max-width: 339px
+        @media screen and ( max-width: 379px )
+          width: calc( 100vw - 40px )
+          
         &__text-imput
           width: 100vw
           max-width: 335px
           font-size: 28px
           height: 33px
+          @media screen and ( max-width: 379px )
+            width: calc( 100vw - 40px ) 
         &__label
           display: inline-block
           margin-top: 10px
@@ -106,12 +120,18 @@
           width: 100vw
           max-width: 338px
           cursor: pointer
+          @media screen and ( max-width: 379px )
+            width: calc( 100vw - 40px )
           &:hover
             color: #ffffff
         &__note
           display: flex
           font-size: 12px
           padding: 11px 0 8px
+          @media screen and ( max-width: 379px )
+            flex-wrap: wrap
+            .section--home-sea__form__lower__privacy-link
+              margin-left: 21px
         &__icon
           padding-right: 9px
         &__privacy-link
