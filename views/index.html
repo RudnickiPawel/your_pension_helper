@@ -56,15 +56,41 @@
         </div>
         <div class="section--home-sea__form__lower">
           <form action="#">
-            <label class="section--home-sea__form__lower__label" for="name--home">YOUR NAME:</label><br>
-            <input class="section--home-sea__form__lower__text-imput" type="text" id="name--home" name="name--home"><br>
-            <label class="section--home-sea__form__lower__label" for="number--home">YOUR CONTACT NUMBER:</label><br>
-            <input class="section--home-sea__form__lower__text-imput" type="text" id="number--home" name="number--home"><br>
-            <label class="section--home-sea__form__lower__label" for="post-code--home">POST CODE:</label><br>
-            <input class="section--home-sea__form__lower__text-imput" type="text" id="post-code--home" name="post-code--home"><br>
+            <label class="section--home-sea__form__lower__label" for="name--home-sea">YOUR NAME:</label><br>
+            <input class="section--home-sea__form__lower__text-imput" method="POST" type="text" id="name--home-sea"
+              name="name--home-sea" pattern="[^0-9]{1,150}" title="Something went wrong. Please make sure that the name field is not empty, does not contain any numbers and is shorter than 150 characters." required><br>
+            <!-- 
+              to make inputing foreign characters possible, all characters except numbers are accepted;
+              up to 150 of them;
+            -->
+            <label class="section--home-sea__form__lower__label" for="number--home-sea">YOUR CONTACT NUMBER:</label><br>
+            <input class="section--home-sea__form__lower__text-imput" method="POST" type="tel" id="number--home-sea"
+              name="number--home-sea"
+              pattern="^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$"
+              title="Something went wrong. Please make sure that the contact number field is not empty and follows the correct format of the UK phone numbers, for example: (0722) 5555555 or +447225555555."
+              required><br>
+            <!-- 
+              phone regex for uk
+              source: http://regexlib.com/UserPatterns.aspx?authorid=d95177b0-6014-4e73-a959-73f1663ae814&AspxAutoDetectCookieSupport=1
+              desc:
+                Matches     +447222555555   | +44 7222 555 555 | (0722) 5555555 #2222
+                Non-Matches (+447222)555555 | +44(7222)555555  | (0722) 5555555 #22 
+              -->
+            <label class="section--home-sea__form__lower__label" for="post-code--home-sea">POST CODE:</label><br>
+            <input class="section--home-sea__form__lower__text-imput" method="POST" type="text" id="post-code--home-sea"
+              name="post-code--home-sea"
+              pattern="([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2})"
+              title="Something went wrong. Please make sure that the postcode field is not empty and follows the correct format for UK postcode, for example: m11ed."
+              required><br>
+            <!-- 
+              post code regex for uk 
+              supposedly supplied by the UK Government
+              source: https://stackoverflow.com/questions/164979/regex-for-matching-uk-postcodes
+            -->
             <div class="section--home-sea__form__lower__note">
               <img class="section--home-sea__form__lower__icon" src="../src/home-form-icon.png" alt="">
-              GDPR COMPLIANT. PLEASE VIEW OUR&nbsp<a class="section--home-sea__form__lower__privacy-link" href="#">PRIVACY POLICY</a>
+              GDPR COMPLIANT. PLEASE VIEW OUR&nbsp<a class="section--home-sea__form__lower__privacy-link"
+                href="#">PRIVACY POLICY</a>
             </div>
             <input class="section--home-sea__form__submit-btn" type="submit" value="SEND NOW">
           </form>
