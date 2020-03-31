@@ -1,15 +1,23 @@
 .section
   display: flex
   position: relative
+  justify-content: center
+  // reusable styles below
   .section__title
     font-family: 'Merriweather', serif
+    font-size: 36px  
+    font-weight: 700
+  .section__underline
+    height: 2px
+    width: 143px
+    background-color: #29abe2
   .section__weight700
     font-weight: 700
   .section__weight300
     font-weight: 300
 
+  //individual styles below
   &--home-sea
-    display: flex
     justify-content: center
     height: 710px
     background-image: url('../../src/home-image.png')
@@ -51,6 +59,7 @@
     &__title
       font-size: 44px
       max-width: 591px
+      font-family: 'Merriweather', serif
     &__text
       font-size: 30px
       line-height: 1.33
@@ -141,3 +150,24 @@
           &:hover
             color: #000000
             border-bottom: 1px solid #000000
+  &--home-ready
+    flex-direction: column
+    align-items: center
+    text-align: center
+    &__text
+      font-size: 30px
+    &__wrapper
+      display: flex
+      max-width: 1200px
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.11) !important
+    &__container
+      box-shadow: -5px 5px 15px -5px rgba(0, 0, 0, 0.11)
+      width: 300px
+      &:first-child
+        box-shadow: none
+
+        
+      
+      
+
+    
