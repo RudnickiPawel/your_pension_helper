@@ -158,16 +158,33 @@
       font-size: 30px
     &__wrapper
       display: flex
+      flex-wrap: wrap
+      justify-content: center
       max-width: 1200px
-      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.11) !important
     &__container
-      box-shadow: -5px 5px 15px -5px rgba(0, 0, 0, 0.11)
       width: 300px
-      &:first-child
-        box-shadow: none
-
-        
-      
-      
-
-    
+      box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+      //right box-shadow: 15px 0 17px -12px rgba(0, 0, 0, 0.11)
+      //top box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11)
+      //left box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11)
+      //bottom box-shadow: 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+      @media screen and ( min-width: 1200px 
+        &:last-of-type
+          box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11)
+      @media (min-width: 900px) and (max-width: 1200px)
+        &:nth-last-of-type(2)
+          box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11)
+        &:last-of-type
+          box-shadow: 15px 0 17px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+      @media (min-width: 600px) and (max-width: 899px)
+        &:nth-child(2)
+          box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 -15px 15px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+        &:nth-of-type(n+3):nth-child(odd)
+          box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+        &:nth-of-type(n+3):nth-child(even)
+          box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11)
+      @media screen and ( max-width: 599px )
+        &:nth-of-type(1)
+          box-shadow: 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+        &:nth-of-type(n+2)
+          box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
