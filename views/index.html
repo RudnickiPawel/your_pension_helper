@@ -11,26 +11,43 @@
 </head>
 
 <body>
-  <div class="nav">
-    <img src="../src/nav-icon1.png" alt="" class="nav__image nav__image1">
-    <img src="../src/nav-icon2.png" alt="" class="nav__image nav__image2">
-    <div class="nav__categories">
-      <a href="#" class="nav__category nav__category1">Home</a>
-      <a href="#" class="nav__category nav__category2">About Us</a>
-      <a href="#" class="nav__category nav__category3">Our Services</a>
-      <a href="#" class="nav__category nav__category4">Articles</a>
-      <a href="#" class="nav__category nav__category5">Contact Us</a>
+  <div class="section">
+    <div class="section__container">
+      <nav class="nav" role="navigation">
+        <div class="nav__hamburger">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="nav__hamburger-menu">
+            <a href="#" class="nav__category"><li>Home</li></a>
+            <a href="#" class="nav__category"><li>About Us</li></a>
+            <a href="#" class="nav__category"><li>Our Services</li></a>
+            <a href="#" class="nav__category"><li>Articles</li></a>
+            <a href="#" class="nav__category"><li>Contact Us</li></a>
+          </ul>
+        </div>
+
+        <img src="../src/nav-icon1.png" alt="" class="nav__image nav__image1">
+        <img src="../src/nav-icon2.png" alt="" class="nav__image nav__image2">
+        <div class="nav__categories">
+          <a href="#" class="nav__category">Home</a>
+          <a href="#" class="nav__category">About Us</a>
+          <a href="#" class="nav__category">Our Services</a>
+          <a href="#" class="nav__category">Articles</a>
+          <a href="#" class="nav__category">Contact Us</a>
+        </div>
+        <a href="tel:08000029464" class="nav__phone">
+          <img src="../src/nav-icon3.png" alt="" class="nav__image nav__image3">
+          <div class="nav__phone-text">
+            <div class="nav__phone-text1">Free Advice</div>
+            <div class="nav__phone-text2">08000029464</div>
+            <div class="nav__phone-text3">Mon-Fri: 9:30am to 5:30pm</div>
+          </div>
+        </a>
+      </nav>
     </div>
-    <a href="tel:08000029464" class="nav__phone">
-      <img src="../src/nav-icon3.png" alt="" class="nav__image nav__image3">
-      <div class="nav__phone-text">
-        <div class="nav__phone-text1">Free Advice</div>
-        <div class="nav__phone-text2">08000029464</div>
-        <div class="nav__phone-text3">Mon-Fri: 9:30am to 5:30pm</div>
-      </div>
-    </a>
-  </div>
-  <div class="section section--home-sea">
+    <!-- <div class="section section--home-sea">
     <div class="section--home-sea__wrapper">
       <div class="section--home-sea__container">
         <div class="section--home-sea__title">
@@ -61,34 +78,18 @@
               name="name--home-sea" pattern="[^0-9]{1,150}"
               title="Something went wrong. Please make sure that the name field is not empty, does not contain any numbers and is shorter than 150 characters."
               required><br>
-            <!-- 
-              to make inputing foreign characters possible, all characters except numbers are accepted;
-              up to 150 of them;
-            -->
             <label class="section--home-sea__form__lower__label" for="number--home-sea">YOUR CONTACT NUMBER:</label><br>
             <input class="section--home-sea__form__lower__text-imput" method="POST" type="tel" id="number--home-sea"
               name="number--home-sea"
               pattern="^(((\+44\s?\d{4}|\(?0\d{4}\)?)\s?\d{3}\s?\d{3})|((\+44\s?\d{3}|\(?0\d{3}\)?)\s?\d{3}\s?\d{4})|((\+44\s?\d{2}|\(?0\d{2}\)?)\s?\d{4}\s?\d{4}))(\s?\#(\d{4}|\d{3}))?$"
               title="Something went wrong. Please make sure that the contact number field is not empty and follows the correct format of the UK phone numbers, for example: (0722) 5555555 or +447225555555."
               required><br>
-            <!-- 
-              phone regex for uk
-              source: http://regexlib.com/UserPatterns.aspx?authorid=d95177b0-6014-4e73-a959-73f1663ae814&AspxAutoDetectCookieSupport=1
-              desc:
-                Matches     +447222555555   | +44 7222 555 555 | (0722) 5555555 #2222
-                Non-Matches (+447222)555555 | +44(7222)555555  | (0722) 5555555 #22 
-              -->
             <label class="section--home-sea__form__lower__label" for="post-code--home-sea">POST CODE:</label><br>
             <input class="section--home-sea__form__lower__text-imput" method="POST" type="text" id="post-code--home-sea"
               name="post-code--home-sea"
               pattern="([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2})"
               title="Something went wrong. Please make sure that the postcode field is not empty and follows the correct format for UK postcode, for example: m11ed."
               required><br>
-            <!-- 
-              post code regex for uk 
-              supposedly supplied by the UK Government
-              source: https://stackoverflow.com/questions/164979/regex-for-matching-uk-postcodes
-            -->
             <div class="section--home-sea__form__lower__note">
               <img class="section--home-sea__form__lower__icon" src="../src/home-form-icon.png" alt="">
               GDPR COMPLIANT. PLEASE VIEW OUR&nbsp<a class="section--home-sea__form__lower__privacy-link"
@@ -130,8 +131,8 @@
       </div>
       </div>
     </div>
+  </div> -->
   </div>
-
   <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="../main.js"></script>
 </body>
