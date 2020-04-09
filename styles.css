@@ -19,6 +19,27 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .nav__image1, .nav__image2, .nav__image3 {
+    height: auto;
+  }
+  .nav__image1 {
+    width: 15vw;
+  }
+  .nav__image2 {
+    width: 25vw;
+  }
+  .nav__image3 {
+    width: 30vw;
+  }
+}
+
 .nav__image {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -43,18 +64,12 @@
 
 @media screen and (max-width: 767px) {
   .nav__image2 {
-    margin: 0 28px;
+    margin: 0 4%;
   }
 }
 
 .nav__image3 {
-  margin: 0 13px 0 35px;
-}
-
-@media (min-width: 768px) and (max-width: 1330px) {
-  .nav__image3 {
-    margin: 0 13px 0 0 !important;
-  }
+  margin-left: 35px;
 }
 
 @media screen and (max-width: 767px) {
@@ -101,104 +116,22 @@
   }
 }
 
-.nav__phone-text1, .nav__phone-text2 {
-  margin-left: 1px;
-}
-
-.nav__phone-text1 {
-  font-size: 18px;
-  color: #0a2f73;
-  text-align: left;
-}
-
-.nav__phone-text2 {
-  font-size: 28px;
-  color: #29abe2;
-  font-weight: 700;
-}
-
-.nav__phone-text3 {
-  font-size: 16px;
-  color: #0a2f73;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #232323;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-.nav a:hover {
-  color: tomato;
-}
-
-.nav span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: absolute;
-  background: #0a2f73;
-  border-radius: 3px;
-  z-index: 1;
-  -webkit-transform-origin: 4px 0px;
-          transform-origin: 4px 0px;
-  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-@media screen and (min-width: 768px) {
-  .nav span {
-    display: none;
+@media (min-width: 768px) and (max-width: 1330px) {
+  .nav__hamburger {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: static;
+    width: 80%;
   }
 }
 
-.nav span:first-child {
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
-}
-
-.nav span:nth-last-child(2) {
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
-}
-
-.nav input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 2;
-  -webkit-touch-callout: none;
-}
-
-.nav input:checked ~ ul {
-  -webkit-transform: none;
-          transform: none;
-  opacity: 1;
-}
-
-.nav input:checked ~ span {
-  opacity: 1;
-  -webkit-transform: rotate(45deg) translate(-2px, -1px);
-          transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-.nav input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-.nav input:checked ~ span:nth-last-child(2) {
-  -webkit-transform: rotate(-45deg) translate(0, -1px);
-          transform: rotate(-45deg) translate(0, -1px);
+@media screen and (min-width: 1331px) {
+  .nav__hamburger {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .nav__hamburger-menu {
@@ -214,23 +147,11 @@
   list-style-type: none;
   list-style: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-}
-
-@media screen and (min-width: 1331px) {
-  .nav__hamburger-menu {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1330px) {
   .nav__hamburger-menu {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    position: static;
+    width: 100%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     -ms-flex-pack: distribute;
@@ -241,9 +162,10 @@
 @media screen and (max-width: 767px) {
   .nav__hamburger-menu {
     position: absolute;
-    top: 90px;
-    width: 100vw;
     margin: 0;
+    top: 8vw;
+    left: 0;
+    width: 320px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -254,13 +176,24 @@
     background: rgba(41, 171, 226, 0.85);
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    -webkit-transform: translate(-1000%, 0);
+            transform: translate(-1000%, 0);
     -webkit-transition: opacity 0.5s, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: opacity 0.5s, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.5s;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.5s, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
+}
+
+.nav__hamburger-menu a {
+  text-decoration: none;
+  color: #232323;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.nav__hamburger-menu a:hover {
+  color: tomato;
 }
 
 .nav__hamburger-menu li {
@@ -271,6 +204,106 @@
 
 .nav__hamburger-menu .nav__category {
   color: #0a2f73;
+}
+
+.nav__hamburger-icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__hamburger-icon {
+    display: none;
+  }
+}
+
+.nav__hamburger-icon span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__hamburger-icon span {
+    display: none;
+  }
+}
+
+.nav__hamburger-icon span:first-of-type {
+  margin-top: 10px;
+}
+
+.nav__hamburger-icon input {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.nav__hamburger-icon input:not(:checked) ~ span {
+  background: rgba(41, 171, 226, 0.85);
+}
+
+.nav__hamburger-icon input:not(:checked):hover ~ span {
+  background: #0a2f73;
+}
+
+.nav__hamburger-icon input:checked ~ span {
+  background: #0a2f73;
+}
+
+.nav__hamburger-icon input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+
+.nav__hamburger-icon input:checked ~ .span1 {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(0, -2px);
+          transform: rotate(45deg) translate(0, -2px);
+}
+
+.nav__hamburger-icon input:checked ~ .span2 {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.nav__hamburger-icon input:checked ~ .span3 {
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
 }
 
 .section {
@@ -316,4 +349,8 @@ body, html {
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
   background-color: #ffffff;
+}
+
+p {
+  margin-top: 1000px;
 }
