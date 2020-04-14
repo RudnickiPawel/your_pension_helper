@@ -1,0 +1,12 @@
+.background--home-sea {
+  height: 710px;
+  background-image: url("src/home-image.png");
+  background-position: 0% 100%;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .background--home-sea {
+    height: auto;
+  }
+}

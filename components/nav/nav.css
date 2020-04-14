@@ -148,6 +148,8 @@
   list-style-type: none;
   list-style: none;
   -webkit-font-smoothing: antialiased;
+  -webkit-transform: none;
+          transform: none;
 }
 
 @media (min-width: 768px) and (max-width: 1330px) {
