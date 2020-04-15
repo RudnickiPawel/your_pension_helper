@@ -166,7 +166,7 @@
   .nav__hamburger-menu {
     position: absolute;
     margin: 0;
-    top: 110%;
+    top: 100%;
     left: 0;
     width: 320px;
     -webkit-box-orient: vertical;

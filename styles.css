@@ -166,7 +166,7 @@
   .nav__hamburger-menu {
     position: absolute;
     margin: 0;
-    top: 110%;
+    top: 100%;
     left: 0;
     width: 320px;
     -webkit-box-orient: vertical;
@@ -333,6 +333,18 @@
   width: 100%;
 }
 
+.section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+}
+
 .section__title {
   font-size: 36px;
   font-family: 'Merriweather', serif;
@@ -340,10 +352,6 @@
 
 .section__semi-title {
   font-size: 30px;
-}
-
-.section .-max-width1201 {
-  max-width: 1201px;
 }
 
 .section .-font44 {
