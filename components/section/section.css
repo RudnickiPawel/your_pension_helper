@@ -36,6 +36,22 @@
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1200px;
+  width: 100%;
+}
+
+.section__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media screen and (max-width: 767px) {
+  .section__wrapper {
+    text-align: center;
+  }
 }
 
 .section__title {
@@ -57,14 +73,6 @@
   .section__semi-title {
     text-align: center;
   }
-}
-
-.section .home-sea .section__title {
-  margin-bottom: 42px;
-}
-
-.section .-max-width591 {
-  max-width: 591px;
 }
 
 .section .-font44 {

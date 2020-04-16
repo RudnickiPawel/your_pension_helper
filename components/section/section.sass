@@ -18,10 +18,15 @@
     flex-wrap: wrap
     justify-content: center
     max-width: 1200px
+    width: 100%
     // margin-bottom: 43px
   
   &__wrapper
     // container that is used in easy applying styles
+    display: flex
+    height: fit-content
+    @media screen and ( max-width: 767px )
+      text-align: center
 
   &__title
     font-size: 36px
@@ -34,15 +39,10 @@
     @media screen and ( max-width: 767px )
       text-align: center
 
-  //modifiers for specific sections
-  .home-sea
-    .section__title
-      margin-bottom: 42px
-
   //max-width modifiers
-  .-max-width
-    &591
-      max-width: 591px
+  // .-max-width
+  //   &591
+  //     max-width: 591px
 
   //text modifiers
   .-font
