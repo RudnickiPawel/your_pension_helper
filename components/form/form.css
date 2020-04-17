@@ -1,3 +1,41 @@
-.form--home {
-  max-width: 312px;
+.form input {
+  width: 100%;
+  height: 39px;
+  font-size: 25px;
+}
+
+.--home {
+  padding: 0 5% 5%;
+  background-color: #006ace;
+}
+
+.--home label {
+  display: block;
+  margin: 10px 0 12px;
+  font-size: 14px;
+}
+
+.--home .--note {
+  font-size: 12px;
+  margin: 11px 0 9px;
+}
+
+.--home .form__image {
+  padding-right: 9px;
+  position: relative;
+  top: 1px;
+}
+
+.--home .form__link {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.--home .form__submit {
+  height: 65px;
+  background-color: #ffba00;
+  color: #006ace;
+  font-size: 22px;
+  font-weight: 700;
 }

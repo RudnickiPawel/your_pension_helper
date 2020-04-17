@@ -3,23 +3,39 @@
   color: #fff
   .section__content
     justify-content: space-between
+    margin-top: 131px
   .section__title
-    margin-bottom: 42px
+    margin-bottom: 25px
     line-height: 1.5
   .section__subtitle
     line-height: 1.33
+  .section__underline
+    height: 6px
+    width: 100%
+    background-image: linear-gradient(to right, #006ace, #0052a0)
   .--text
+    margin-top: 123px
     flex-direction: column
     max-width: 591px
     @media screen and ( max-width: 767px )
       max-width: none
+
+  .--form-container
+    flex-direction: column
+    max-width: 379px
   .--above-form
     height: 88px
+    padding: 0 5%
     flex-direction: column
     justify-content: center
     align-items: center
+    background-image: linear-gradient(to left, #006ace, #0052a0)
     .section__title
       margin: 0
       font-size: 24px
     .section__subtitle
       font-size: initial
+      span
+        font-size: 22px
+
+    // the rest of styles is in form--home component
