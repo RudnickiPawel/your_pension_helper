@@ -1,6 +1,6 @@
 .form input {
   width: 100%;
-  height: 39px;
+  height: 33px;
   font-size: 25px;
 }
 
@@ -23,7 +23,7 @@
 .--home .form__image {
   padding-right: 9px;
   position: relative;
-  top: 1px;
+  bottom: 1px;
 }
 
 .--home .form__link {
@@ -35,7 +35,9 @@
 .--home .form__submit {
   height: 65px;
   background-color: #ffba00;
-  color: #006ace;
+  color: #0a2f73;
   font-size: 22px;
   font-weight: 700;
+  border: none;
+  padding: 0;
 }
