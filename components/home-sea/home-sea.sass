@@ -1,14 +1,33 @@
 .home-sea
   // component located in landing/home page; it has image of the sea
   color: #fff
+  @media screen and ( max-width: 1030px )
+    height: auto
+
   .section__content
     justify-content: space-between
-    margin-top: 131px
+    margin: 131px 2% 0
+    @media screen and ( max-width: 1030px )
+      display: flex
+      flex-direction: column
+      margin: 0
+      text-align: center
+      
   .section__title
     margin-bottom: 25px
     line-height: 1.5
+    @media (min-width: 591px) and ( max-width: 1030px )
+      max-width: 591px
+    @media screen and ( max-width: 370px )
+      font-size: 26px
+      margin: 0 3%
   .section__subtitle
     line-height: 1.33
+    @media screen and ( max-width: 370px )
+      font-size: 20px
+      margin: 0 3%
+      // br
+      //   display: none
   .section__underline
     height: 6px
     width: 100%
@@ -17,6 +36,12 @@
     margin-top: 123px
     flex-direction: column
     max-width: 591px
+    @media screen and ( max-width: 1030px )
+      margin: 0
+      max-width: none
+      margin-bottom: 30px
+      align-items: center
+      // text-align:
     @media screen and ( max-width: 767px )
       max-width: none
 
@@ -24,6 +49,8 @@
     flex-direction: column
     max-width: 379px
     width: 100%
+    @media screen and ( max-width: 1030px )
+      max-width: none
   .--above-form
     height: 88px
     padding: 0 5%
@@ -34,9 +61,16 @@
     .section__title
       margin: 0
       font-size: 24px
+      @media screen and ( max-width: 370px )
+        font-size: 20px
     .section__subtitle
       font-size: initial
       span
         font-size: 22px
+      @media screen and ( max-width: 370px )
+        font-size: 16px
+        span
+          font-size: 18px
+      
 
     // the rest of styles is in form--home component

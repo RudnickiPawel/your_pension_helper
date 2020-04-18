@@ -2,11 +2,31 @@
   color: #fff;
 }
 
+@media screen and (max-width: 1030px) {
+  .home-sea {
+    height: auto;
+  }
+}
+
 .home-sea .section__content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 131px;
+  margin: 131px 2% 0;
+}
+
+@media screen and (max-width: 1030px) {
+  .home-sea .section__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .home-sea .section__title {
@@ -14,8 +34,28 @@
   line-height: 1.5;
 }
 
+@media (min-width: 591px) and (max-width: 1030px) {
+  .home-sea .section__title {
+    max-width: 591px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .home-sea .section__title {
+    font-size: 26px;
+    margin: 0 3%;
+  }
+}
+
 .home-sea .section__subtitle {
   line-height: 1.33;
+}
+
+@media screen and (max-width: 370px) {
+  .home-sea .section__subtitle {
+    font-size: 20px;
+    margin: 0 3%;
+  }
 }
 
 .home-sea .section__underline {
@@ -34,6 +74,17 @@
   max-width: 591px;
 }
 
+@media screen and (max-width: 1030px) {
+  .home-sea .--text {
+    margin: 0;
+    max-width: none;
+    margin-bottom: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .home-sea .--text {
     max-width: none;
@@ -47,6 +98,12 @@
           flex-direction: column;
   max-width: 379px;
   width: 100%;
+}
+
+@media screen and (max-width: 1030px) {
+  .home-sea .--form-container {
+    max-width: none;
+  }
 }
 
 .home-sea .--above-form {
@@ -71,10 +128,25 @@
   font-size: 24px;
 }
 
+@media screen and (max-width: 370px) {
+  .home-sea .--above-form .section__title {
+    font-size: 20px;
+  }
+}
+
 .home-sea .--above-form .section__subtitle {
   font-size: initial;
 }
 
 .home-sea .--above-form .section__subtitle span {
   font-size: 22px;
+}
+
+@media screen and (max-width: 370px) {
+  .home-sea .--above-form .section__subtitle {
+    font-size: 16px;
+  }
+  .home-sea .--above-form .section__subtitle span {
+    font-size: 18px;
+  }
 }
