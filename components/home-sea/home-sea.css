@@ -1,5 +1,6 @@
 .home-sea {
   color: #fff;
+  margin-bottom: 96px;
 }
 
 @media screen and (max-width: 1030px) {
@@ -58,7 +59,7 @@
   }
 }
 
-.home-sea .section__underline {
+.home-sea .section__underline--home-sea {
   height: 6px;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(#006ace), to(#0052a0));

@@ -75,6 +75,19 @@
   }
 }
 
+@media screen and (max-width: 850px) {
+  .section .--hide-br850 br {
+    display: none;
+  }
+}
+
+.section__underline {
+  height: 2px;
+  width: 143px;
+  background-color: #29abe2;
+  margin: 12px 0;
+}
+
 .section .-font44 {
   font-size: 44px;
 }
@@ -101,4 +114,8 @@
 
 .section .-weight700 {
   font-weight: 700;
+}
+
+.section .--text-centered {
+  text-align: center;
 }
