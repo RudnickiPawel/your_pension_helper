@@ -469,7 +469,10 @@
 
 @media screen and (max-width: 767px) {
   .background--home-crest {
-    height: auto;
+    background-image: url("src/home-crest2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
   }
 }
 
@@ -807,11 +810,20 @@
   font-weight: 700;
   color: #006ace;
   border-bottom: 1px solid #006ace;
-  height: 28px;
 }
 
 .home-calc-link .section__image {
   padding-right: 16px;
+}
+
+.home-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body, html {
