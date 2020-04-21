@@ -1,0 +1,21 @@
+.home-calc-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 89px;
+}
+
+.home-calc-link .section__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #006ace;
+  border-bottom: 1px solid #006ace;
+  height: 28px;
+}
+
+.home-calc-link .section__image {
+  padding-right: 16px;
+}

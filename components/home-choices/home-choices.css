@@ -1,3 +1,12 @@
+.home-choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 62px 0 43px;
+}
+
 .home-choices .section__wrapper {
   width: 300px;
   display: -webkit-box;
@@ -10,6 +19,52 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11);
+}
+
+@media screen and (min-width: 1200px) {
+  .home-choices .section__wrapper:last-of-type {
+    -webkit-box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11);
+            box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11);
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .home-choices .section__wrapper:nth-last-of-type(2) {
+    -webkit-box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11);
+            box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11);
+  }
+  .home-choices .section__wrapper:last-of-type {
+    -webkit-box-shadow: 15px 0 17px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11);
+            box-shadow: 15px 0 17px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .home-choices .section__wrapper:nth-child(2) {
+    -webkit-box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 -15px 15px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11);
+            box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 -15px 15px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11);
+  }
+  .home-choices .section__wrapper:nth-of-type(n+3):nth-child(odd) {
+    -webkit-box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11);
+            box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11);
+  }
+  .home-choices .section__wrapper:nth-of-type(n+3):nth-child(even) {
+    -webkit-box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11);
+            box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11);
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .home-choices .section__wrapper:nth-of-type(1) {
+    -webkit-box-shadow: 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11);
+            box-shadow: 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11);
+  }
+  .home-choices .section__wrapper:nth-of-type(n+2) {
+    -webkit-box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11);
+            box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11);
+  }
 }
 
 .home-choices .section__image {
@@ -30,4 +85,12 @@
   color: #006ace;
   font-weight: 700;
   text-align: center;
+}
+
+.home-choices .section__subtitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000000;
+  padding: 21px 0 50px;
 }

@@ -10,3 +10,16 @@
     height: auto;
   }
 }
+
+.background--home-crest {
+  height: 817px;
+  background-image: url("src/home-crest.png");
+  background-position: 100%;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .background--home-crest {
+    height: auto;
+  }
+}

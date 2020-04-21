@@ -1,9 +1,44 @@
 .home-choices
+  display: flex
+  flex-wrap: wrap
+  margin: 62px 0 43px
   .section__wrapper
     width: 300px
     display: flex
     justify-content: center
     flex-direction: column
+    // shadows are tricky, because just setting it on each wrapper doesnt do it; if done so,
+    // they overlap and look much darker; 
+    // box-shadow: 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+    // to check, uncomment line above; and comment box-shadow code below, including medias
+
+    // all wrappers get shadow on top, left, bottom
+    //right box-shadow: 15px 0 17px -12px rgba(0, 0, 0, 0.11)
+    //top box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11)
+    //left box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11)
+    //bottom box-shadow: 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+
+    box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+    @media screen and ( min-width: 1200px)
+      &:last-of-type
+        box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11)
+    @media (min-width: 900px) and (max-width: 1200px)
+      &:nth-last-of-type(2)
+        box-shadow: 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11)
+      &:last-of-type
+        box-shadow: 15px 0 17px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+    @media (min-width: 600px) and (max-width: 899px)
+      &:nth-child(2)
+        box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 -15px 15px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+      &:nth-of-type(n+3):nth-child(odd)
+        box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+      &:nth-of-type(n+3):nth-child(even)
+        box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11)
+    @media screen and ( max-width: 599px )
+      &:nth-of-type(1)
+        box-shadow: 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 -15px 15px -12px rgba(0, 0, 0, 0.11), -15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
+      &:nth-of-type(n+2)
+        box-shadow: -15px 0 17px -12px rgba(0, 0, 0, 0.11), 15px 0 17px -12px rgba(0, 0, 0, 0.11), 0 15px 15px -12px rgba(0, 0, 0, 0.11)
   .section__image
     height: 191px
     display: flex
@@ -14,3 +49,10 @@
     color: #006ace
     font-weight: 700
     text-align: center
+
+  .section__subtitle
+    text-align: center
+    font-size: 18px
+    font-weight: 300
+    color: #000000
+    padding: 21px 0 50px
