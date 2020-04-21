@@ -803,6 +803,8 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 89px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .home-calc-link .section__title {
@@ -814,6 +816,12 @@
 
 .home-calc-link .section__image {
   padding-right: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .home-calc-link .section__image {
+    padding: 0 0 10px;
+  }
 }
 
 .home-about {
