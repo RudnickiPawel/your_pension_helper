@@ -1,6 +1,7 @@
 .home-about
   display: flex
   flex-direction: column
+  position: relative
   .section__title
     color: #ffffff
     font-weight: 700
@@ -17,13 +18,40 @@
       height: 2px
       background-color: #29abe2
       margin: 15px 0 26px
-    .section__wrapper
-      max-width: 1196px
-      font-weight: 300
-      font-size: 24px
-      color: #ffffff
+    .section__content
+      // max-width: 1200px
+      justify-content: space-between
+      margin-bottom: 88px
+      @media screen and ( max-width: 1199px )
+        flex-direction: column
+        margin: 0
+        text-align: center
+        align-items: center
+        
+      .section__subtitle
+        font-weight: 300
+        font-size: 24px
+        color: #ffffff
+    .text1, .text2
       span
         color: #ffba00
         font-weight: 700
+    .text1
+      width: 560px
+      line-height: 1.25
+      @media screen and ( max-width: 1199px )
+        width: 100%
+    .text2 
+      width: 640px
+      @media screen and ( max-width: 1199px )
+        width: 100%
+      span
+        font-size: 60px
+      div
+        margin-left: 210px
+        font-size: 36px
+        @media screen and ( max-width: 1199px )
+          width: 100%
+          margin: 0
   .section__container2
     background-color: #006ace
