@@ -40,11 +40,12 @@
       width: 560px
       line-height: 1.25
       @media screen and ( max-width: 1199px )
-        width: 100%
+        width: 90%
     .text2 
       width: 640px
       @media screen and ( max-width: 1199px )
         width: 100%
+        margin: 30px 0
       span
         font-size: 60px
       div
@@ -54,4 +55,31 @@
           width: 100%
           margin: 0
   .section__container2
+    display: flex
+    justify-content: center
     background-color: #006ace
+    @media ( min-width: 768px ) and (max-width: 1199px)
+      padding: 0 3%
+    @media screen and ( max-width: 767px )
+      flex-direction: column
+      align-items: center
+    .section__wrapper
+      flex-direction: column
+      width: 350px
+    .section__title
+      font-size: 24px
+      margin: 40px 0 20px
+    .section__subtitle
+      font-size: 18px
+      color: #ffffff
+      font-weight: 300
+      line-height: 1.67
+    .section__underline
+      height: 90px
+      width: 2px
+      background-color: #282828
+      margin: 100px 33px 99px
+      @media screen and ( max-width: 767px )
+        height: 2px
+        width: 350px
+        margin: 30px 0 30px
