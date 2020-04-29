@@ -17,6 +17,12 @@
   border-bottom: 1px solid #006ace;
 }
 
+@media screen and (max-width: 600px) {
+  .home-calc-link .section__title {
+    width: 80%;
+  }
+}
+
 .home-calc-link .section__image {
   padding-right: 16px;
 }
