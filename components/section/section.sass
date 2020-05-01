@@ -19,6 +19,7 @@
     justify-content: center
     max-width: 1200px
     width: 100%
+    z-index: 10
   
   &__wrapper
     // container that is used in easy applying styles
@@ -26,7 +27,10 @@
     height: fit-content
     @media screen and ( max-width: 767px )
       text-align: center
-
+  .-rows
+    flex-direction: row
+  .-cols
+    flex-direction: column
   &__title
     font-size: 36px
     font-family: 'Merriweather', serif

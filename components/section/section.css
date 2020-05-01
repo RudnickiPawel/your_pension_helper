@@ -37,6 +37,7 @@
           justify-content: center;
   max-width: 1200px;
   width: 100%;
+  z-index: 10;
 }
 
 .section__wrapper {
@@ -52,6 +53,20 @@
   .section__wrapper {
     text-align: center;
   }
+}
+
+.section .-rows {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section .-cols {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .section__title {
