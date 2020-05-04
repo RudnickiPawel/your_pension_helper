@@ -4,23 +4,46 @@
   .section__content
     margin-top: 69px
     justify-content: space-between
+    margin-bottom: 54px
+    @media screen and ( max-width: 1175px )
+      flex-direction: column
+      
   .-cols:first-child
     margin-left: 75px
+    @media screen and ( max-width: 1175px )
+      margin: 0
+      align-items: center
   .section__title
     width: 365px
     margin-top: 32px
+    @media screen and ( max-width: 380px )
+      width: 90%
+      
   .-cols
     .section__image
       height: 114px
       width: 103px
   .-rows
+    @media screen and ( max-width: 1175px )
+      margin: 0 auto
+      margin-top: 20px
+    @media screen and ( max-width: 767px )  
+      flex-direction: column
+      align-items: center
     .section__image
       height: 52px
       width: 52px
       margin-left: 93px
+      @media screen and ( max-width: 1175px )
+        margin: 0
     .-cols
+      @media screen and ( max-width: 767px )  
+        align-items: center
       div:last-child
         margin-top: 20px
+        margin-bottom: 30px
+        @media screen and ( max-width: 1175px )
+          margin-bottom: 0
   [target] //experiment
     display: flex
     margin: 5px 0 24px 17px
@@ -30,6 +53,11 @@
     font-size: 18px
     width: 568px
     margin-left: 24px
+    @media screen and ( max-width: 1175px )
+      margin: 0
+    @media screen and ( max-width: 567px )
+      width: 80%
+      
 
   // .section__subtitle.-width700
   //   
