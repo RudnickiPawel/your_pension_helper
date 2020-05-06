@@ -613,6 +613,7 @@
 .home-sea .section__title {
   margin-bottom: 25px;
   line-height: 1.5;
+  color: #ffffff;
 }
 
 @media (min-width: 591px) and (max-width: 1030px) {
@@ -1316,6 +1317,15 @@
   font-size: 24px;
 }
 
+@media screen and (max-width: 592px) {
+  .home-articles .day, .home-articles .day-small {
+    position: static;
+    padding: 10px 0;
+    width: 50%;
+    margin: 20px auto 0 auto;
+  }
+}
+
 .home-articles .section__content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1346,6 +1356,13 @@
   margin: 0 60px 0 68px;
 }
 
+@media screen and (max-width: 592px) {
+  .home-articles .section__content .section__title {
+    margin: 0 auto;
+    max-width: 462px;
+  }
+}
+
 .home-articles .section__content .section__subtitle {
   color: #000000;
   font-weight: 300;
@@ -1354,8 +1371,31 @@
   margin: 20px 60px 40px 68px;
 }
 
+@media screen and (max-width: 592px) {
+  .home-articles .section__content .section__subtitle {
+    margin: 15px auto 25px;
+    max-width: 80%;
+  }
+}
+
 .home-articles .section__content .section__image {
   margin: 57px 60px 27px 68px;
+}
+
+@media screen and (max-width: 592px) {
+  .home-articles .section__content .section__image {
+    margin: 25px auto 27px auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .home-articles .-rows {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .home-articles .-rows:last-child {
@@ -1367,8 +1407,20 @@
   margin: 60px 20px 15px 0;
 }
 
+@media screen and (max-width: 592px) {
+  .home-articles .-rows .section__title {
+    margin: 0 auto 15px auto;
+  }
+}
+
 .home-articles .-rows .section__subtitle {
   margin: 0 25px 0 0;
+}
+
+@media screen and (max-width: 592px) {
+  .home-articles .-rows .section__subtitle {
+    margin: 0 auto 25px auto;
+  }
 }
 
 .home-articles .-rows .-cols {
@@ -1377,6 +1429,14 @@
 
 .home-articles .-rows .section__image {
   margin: 60px 15px 24px 58px;
+}
+
+@media screen and (max-width: 592px) {
+  .home-articles .-rows .section__image {
+    margin: 25px auto 24px auto;
+    width: 60%;
+    height: auto;
+  }
 }
 
 .home-articles .section__image {
@@ -1388,6 +1448,7 @@
 .home-articles .section__wrapper {
   position: relative;
   max-width: 590px;
+  width: 100%;
 }
 
 body, html {

@@ -33,6 +33,7 @@
 .home-sea .section__title {
   margin-bottom: 25px;
   line-height: 1.5;
+  color: #ffffff;
 }
 
 @media (min-width: 591px) and (max-width: 1030px) {
