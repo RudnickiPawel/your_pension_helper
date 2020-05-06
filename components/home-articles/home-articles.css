@@ -4,12 +4,36 @@
           align-items: center;
 }
 
+.home-articles a {
+  text-decoration: none;
+}
+
+.home-articles a:hover {
+  background-color: #C0ECEC;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
 .home-articles .border {
   border: solid 1px #29abe2;
 }
 
 .home-articles .section__underline {
   margin-bottom: 43px;
+}
+
+.home-articles .section__button {
+  position: absolute;
+  bottom: -23.5px;
+  right: 59px;
+  border: solid 1px #29abe2;
+  background-color: #ffffff;
+  width: 183px;
+  padding: 13px 0;
+  color: #29abe2;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .home-articles .day, .home-articles .day-small {
@@ -75,7 +99,7 @@
   }
   .home-articles .section__content .border {
     margin-top: 0 !important;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 

@@ -1,10 +1,28 @@
 .home-articles
   align-items: center
+  a
+    text-decoration: none
+    &:hover
+      background-color: #C0ECEC
+      transition: background-color 0.5s 
   .border
     border: solid 1px #29abe2
 
   .section__underline
     margin-bottom: 43px
+
+  .section__button
+    position: absolute
+    bottom: -23.5px
+    right: 59px
+    border: solid 1px #29abe2
+    background-color: #ffffff
+    width: 183px
+    padding: 13px 0
+    color: #29abe2
+    font-size: 18px
+    font-weight: 300
+    text-align: center
 
   .day, .day-small
     display: flex
@@ -46,7 +64,7 @@
       justify-content: center
       .border
         margin-top: 0 !important
-        margin-bottom: 20px
+        margin-bottom: 40px
       
     &:last-child
       border: 0
