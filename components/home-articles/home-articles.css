@@ -36,6 +36,14 @@
   text-align: center;
 }
 
+@media screen and (max-width: 592px) {
+  .home-articles .section__button {
+    right: 50%;
+    -webkit-transform: translate(50%);
+            transform: translate(50%);
+  }
+}
+
 .home-articles .day, .home-articles .day-small {
   display: -webkit-box;
   display: -ms-flexbox;
