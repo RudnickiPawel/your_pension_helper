@@ -1,1 +1,12 @@
-/* No CSS */
+.footer {
+  width: 100%;
+}
+
+.footer__lower {
+  font-size: 12px;
+  font-weight: 300;
+  color: #ffba00;
+  background-color: #0052a0;
+  padding: 23px 0;
+  width: 100%;
+}
