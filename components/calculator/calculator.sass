@@ -3,14 +3,27 @@
   align-items: center
   .section__content
     justify-content: flex-start
+    @media (min-width: 768px) and ( max-width: 1230px )
+      margin-left: 4%
+      width: 96%
+      flex-wrap: wrap
+    @media screen and ( max-width: 767px )
+      justify-content: center
+      span
+        margin: 30px 0
+
   .section__title
     font-weight: 700
     margin-top: 91px
     margin-bottom: 25px
+    @media screen and ( max-width: 1230px )
+      width: 96%
   .section__subtitle
     font-size: 20px
     font-weight: 300
     margin-bottom: 87px
+    @media screen and ( max-width: 1230px )
+      width: 96%
     span
       font-weight: 700
   .section__button
@@ -23,8 +36,14 @@
     padding: 23px 22px
     margin-bottom: 95px
     margin-top: 48px
+    @media screen and ( max-width: 767px )
+      width: 100%
+      margin-left: -4%
   .section__wrapper
     align-items: center
+    @media screen and ( max-width: 767px )
+      flex-direction: column
+      
     .section__wrapper
       position: relative
       flex-direction: column
@@ -41,6 +60,8 @@
         max-width: 131px
         padding: 10px 0
         text-align: center
+        @media screen and ( max-width: 767px )
+          top: -142px
       .triangle
         position: absolute
         bottom: 0
@@ -52,6 +73,8 @@
         border-top: 20px solid #006ace
         border-bottom: none
         background-color: transparent
+        @media screen and ( max-width: 767px )
+          top: -113px
     span
       color: #29abe2
       font-size: 24px

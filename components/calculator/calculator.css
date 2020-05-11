@@ -14,16 +14,48 @@
           justify-content: flex-start;
 }
 
+@media (min-width: 768px) and (max-width: 1230px) {
+  .calculator .section__content {
+    margin-left: 4%;
+    width: 96%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .calculator .section__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .calculator .section__content span {
+    margin: 30px 0;
+  }
+}
+
 .calculator .section__title {
   font-weight: 700;
   margin-top: 91px;
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 1230px) {
+  .calculator .section__title {
+    width: 96%;
+  }
+}
+
 .calculator .section__subtitle {
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 87px;
+}
+
+@media screen and (max-width: 1230px) {
+  .calculator .section__subtitle {
+    width: 96%;
+  }
 }
 
 .calculator .section__subtitle span {
@@ -42,10 +74,26 @@
   margin-top: 48px;
 }
 
+@media screen and (max-width: 767px) {
+  .calculator .section__button {
+    width: 100%;
+    margin-left: -4%;
+  }
+}
+
 .calculator .section__wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .calculator .section__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .calculator .section__wrapper .section__wrapper {
@@ -71,6 +119,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .calculator .section__wrapper .section__wrapper span {
+    top: -142px;
+  }
+}
+
 .calculator .section__wrapper .section__wrapper .triangle {
   position: absolute;
   bottom: 0;
@@ -82,6 +136,12 @@
   border-top: 20px solid #006ace;
   border-bottom: none;
   background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .calculator .section__wrapper .section__wrapper .triangle {
+    top: -113px;
+  }
 }
 
 .calculator .section__wrapper span {

@@ -176,6 +176,7 @@
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    z-index: 100;
     background: rgba(41, 171, 226, 0.85);
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
