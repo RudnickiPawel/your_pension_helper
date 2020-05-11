@@ -513,6 +513,16 @@
 .footer {
   width: 100%;
   margin-top: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer a {
@@ -522,6 +532,14 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+@media screen and (max-width: 789px) {
+  .footer a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer a img {
@@ -542,11 +560,23 @@
   color: #ffba00;
 }
 
+@media screen and (max-width: 789px) {
+  .footer__upper .section__title {
+    margin-top: 30px;
+  }
+}
+
 .footer__upper .section__subtitle {
   font-size: 12px;
   font-weight: 300;
   line-height: 1.5;
   margin: 12px 0;
+}
+
+@media screen and (max-width: 1230px) {
+  .footer__upper .section__subtitle {
+    width: 80%;
+  }
 }
 
 .footer__upper .section__wrapper {
@@ -556,6 +586,19 @@
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
+}
+
+@media screen and (max-width: 789px) {
+  .footer__upper .section__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 
 .footer__upper .section__wrapper .section__wrapper {
@@ -586,6 +629,14 @@
           align-items: center;
 }
 
+@media screen and (max-width: 789px) {
+  .footer__upper .section__wrapper .section__wrapper span {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .footer__upper .section__wrapper .section__wrapper span .section__icon {
   margin-left: 8px;
 }
@@ -594,6 +645,22 @@
   margin-right: 130px;
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+@media (min-width: 790px) and (max-width: 1200px) {
+  .footer__upper .section__image {
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .footer__upper .section__image {
+    -ms-flex-item-align: auto;
+        -ms-grid-row-align: auto;
+        align-self: auto;
+    margin: 0;
+  }
 }
 
 .footer__lower {
