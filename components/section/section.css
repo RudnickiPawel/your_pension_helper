@@ -26,6 +26,10 @@
   width: 100%;
 }
 
+.section__container a {
+  text-decoration: none;
+}
+
 .section__content {
   display: -webkit-box;
   display: -ms-flexbox;

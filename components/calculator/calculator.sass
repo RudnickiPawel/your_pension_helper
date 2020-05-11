@@ -1,0 +1,75 @@
+.calculator
+  flex-direction: column
+  align-items: center
+  .section__content
+    justify-content: flex-start
+  .section__title
+    font-weight: 700
+    margin-top: 91px
+    margin-bottom: 25px
+  .section__subtitle
+    font-size: 20px
+    font-weight: 300
+    margin-bottom: 87px
+    span
+      font-weight: 700
+  .section__button
+    background-color: #ffba00
+    font-size: 22px
+    font-family: 'Merriweather', serif
+    font-weight: 700
+    color: #0a2f73
+    text-align: center
+    padding: 23px 22px
+    margin-bottom: 95px
+    margin-top: 48px
+  .section__wrapper
+    align-items: center
+    .section__wrapper
+      position: relative
+      flex-direction: column
+      span
+        position: absolute
+        top: -59px
+        border: solid 1px #006ace
+        background-color: #006ace
+        color: #ffffff
+        font-family: Lato
+        font-size: 16px
+        font-weight: 700
+        width: 100%
+        max-width: 131px
+        padding: 10px 0
+        text-align: center
+      .triangle
+        position: absolute
+        bottom: 0
+        top: -30px
+        width: 0
+        height: 0
+        border-left: 20px solid transparent
+        border-right: 20px solid transparent
+        border-top: 20px solid #006ace
+        border-bottom: none
+        background-color: transparent
+    span
+      color: #29abe2
+      font-size: 24px
+      font-weight: 700
+      font-family: 'Merriweather', serif
+    input
+      margin: 0 17px
+      height: 67px
+      font-size: 24px
+      font-family: 'Merriweather'
+      font-weight: 700
+      border: solid 1px #006ace
+      text-align: center
+      &::placeholder
+        color: #29abe2
+    .input1
+        max-width: 131px
+    .input2
+        max-width: 201px
+        text-align: left
+        padding-left: 10px

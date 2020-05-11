@@ -1,0 +1,20 @@
+.breadcrumb {
+  background-color: #29abe2;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumb .section__content {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.breadcrumb .section__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 22px 0;
+}

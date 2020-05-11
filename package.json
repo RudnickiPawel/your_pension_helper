@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RudnickiPawel/your_pension_helper#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "jquery": "^3.4.1"
   }
 }
