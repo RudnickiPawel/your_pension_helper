@@ -90,12 +90,13 @@
     </div>
     <div class="section__container article">
       <div class="section__content">
-        <div class="section__wrapper">
-          <div class="section__title">DOUBLE BILL AT THE PENSIONLITE OFFICE</div>
-          <div class="section__subtitle">Life is full of choices. We are here to support you with the choices you need
-            to make to get the best out of your life savings.</div>
-          <img src="" alt="" class="section__image">
-          <div class="section__subtitle">
+        <div class="section__wrapper wrapper1">
+          <div class="section__title titl1">DOUBLE BILL AT THE PENSIONLITE OFFICE</div>
+          <div class="section__subtitle subt1">Life is full of choices. We are here to support you with the choices you
+            need
+            to make to get <span>the best out of your life savings.</span></div>
+          <img src="../src/article-image.png" alt="" class="section__image img1">
+          <div class="section__subtitle subt2">
             Yesterday we had a reunion here at the Pensionlite office as Abraham Darby Academy pupil and budding artist
             Ellie Perks came in to see us.<br><br>
 
@@ -115,34 +116,43 @@
             We successfully won that auction as well, and as a gift from us at Pensionlite we gave the miniature
             C-Ellie-Brate to Ellie so she would have something to remember her artistic experience.
           </div>
-          <div class="section__title">
-            <img src="" alt="" class="section__image">
+          <div class="section__title titl2">
+            <img src="../src/article-semicolons.png" alt="" class="section__image">
             <div class="section__divider"></div>
             The giant duck has been in the corner of our office reception for almost a month – and it doesn’t look out
             of place.
           </div>
-          <div class="section__subtitle">We’ve had so many comments when people call us or come into visit, and we are
+          <div class="section__subtitle subt3">We’ve had so many comments when people call us or come into visit, and we
+            are
             very proud that we were able to contribute to such an amazing event which also helped two fantastic
             charities; Severn Hospice and the Jayne Sargent Foundation.</div>
-          <img src="" alt="" class="section__image">
-          <div class="section__subtitle">Managing director Mike Shaw and designer Ellie Perks</div>
+          <img src="../src/article-image2.png" alt="" class="section__image img2">
+          <div class="section__subtitle subt4">Managing director Mike Shaw and designer Ellie Perks</div>
         </div>
-        <div class="section__wrapper">
+        <div class="section__wrapper wrapper2">
+          <div class="article-background"></div>
           <div class="section__title">GET IN TOUCH NOW</div>
-          <input type="text" placeholder="YOUR NAME">
-          <input type="text" placeholder="YOUR CONTACT NUMBER">
-          <input type="text" placeholder="POST CODE">
+          <input class="input1" type="text" placeholder="YOUR NAME" name="name">
+          <input class="input2" type="text" placeholder="YOUR CONTACT NUMBER" name="number">
+          <input class="input3" type="text" placeholder="POST CODE" name="postcode">
           <div class="section__subtitle">BEST FOR US TO CALL YOU:</div>
-          <input type="radio" id="morning" name="when" value="morning">
-          <label for="morning">MORNING</label><br>
-          <input type="radio" id="afternoon" name="when" value="afternoon">
-          <label for="afternoon">AFTERNOON</label><br>
-          <input type="radio" id="evening" name="when" value="evening">
-          <label for="evening">EVENING</label><br>
+          <div class="section__wrapper">
+            <input type="radio" id="morning" name="when" value="morning" checked>
+            <label for="morning">MORNING</label><br>
+          </div>
+          <div class="section__wrapper wrapper3">
+            <input type="radio" id="afternoon" name="when" value="afternoon">
+            <label for="afternoon">AFTERNOON</label><br>
+          </div>
+          <div class="section__wrapper wrapper4">
+            <input type="radio" id="evening" name="when" value="evening">
+            <label for="evening">EVENING</label><br>
+          </div>
           <textarea placeholder="MESSAGE" name="message" id="message" cols="30" rows="10"></textarea>
-          <!-- textarea { resize: none; } -->
-          <input type="checkbox" id="agreement" name="agreement" value="agreement">
-          <label for="agreement">Any information submitted will be processed {...}</label><br>
+          <div class="section__wrapper wrapper4">
+            <input type="checkbox" id="agreement" name="agreement" value="agreement" checked>
+            <label class="label-agreement" for="agreement">Any information submitted will be processed {...}</label><br>
+          </div>
           <div class="section__button">START NOW</div>
         </div>
       </div>
