@@ -65,7 +65,9 @@
 }
 
 .article .wrapper1 .titl2 .section__image {
-  width: auto;
+  width: 100%;
+  max-width: 44px;
+  height: auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -73,7 +75,7 @@
 
 .article .wrapper1 .titl2 .section__divider {
   margin: 0 25px 0 19px;
-  width: 1px;
+  width: 2px;
   height: 66px;
   background-color: #29abe2;
 }
